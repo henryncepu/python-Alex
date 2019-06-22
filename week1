@@ -22,3 +22,9 @@ name:'''+name4+'''
 age:'''+age2+'''
 salary:'''+salary2
 print(info)
+#格式化输出--占位符%s
+info='''-------info of %s-----
+name:%s
+age:%s
+salary:%s'''%(name4,name4,age2,salary2)
+print(info)
