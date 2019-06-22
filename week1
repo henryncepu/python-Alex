@@ -44,11 +44,32 @@ print(info)
 #     print('wel {name}'.format(name=username))
 # else:
 #     print('false')
-age_of_oldhenry =randint(1,100)#在1,100中找随机数
 
+
+
+#将while循环带上数值判断
+age_of_oldhenry =randint(1,100)#在1,100中找随机数
 i=0
 while i <5:
     guess_age = int(input('age:'))#这个每次的随机输入要放到while循环里，要不然就没法每次输入，而是5次直接全部循环完
+    if guess_age == age_of_oldhenry:
+        print(f'你用了{i}次找到答案')
+        break
+    elif guess_age > age_of_oldhenry:
+        i+=1
+        print('bigger than real number')
+    else :
+        i+=1
+        print('smaller than real number')
+print(f'the right number is{age_of_oldhenry}')
+
+#把while循环和数值判断分开
+age_of_oldhenry =randint(1,100)#在1,100中找随机数
+i=0
+while True:
+    if i ==3:
+        break
+    guess_age = int(input('age:'))#shift+ table左移，table右移
     if guess_age == age_of_oldhenry:
         print(f'你用了{i}次找到答案')
         break
