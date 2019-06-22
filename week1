@@ -26,5 +26,5 @@ print(info)
 info='''-------info of %s-----
 name:%s
 age:%s
-salary:%s'''%(name4,name4,age2,salary2)
+salary:%s'''%(name4,name4,age2,salary2)#这里的%s是占位符加上一个输入类型，这里是string型，也可以是%d int型等等
 print(info)
