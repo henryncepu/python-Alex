@@ -48,7 +48,7 @@ age_of_oldhenry =randint(1,100)#在1,100中找随机数
 
 i=0
 while i <5:
-    guess_age = int(input('age:'))
+    guess_age = int(input('age:'))#这个每次的随机输入要放到while循环里，要不然就没法每次输入，而是5次直接全部循环完
     if guess_age == age_of_oldhenry:
         print(f'你用了{i}次找到答案')
         break
