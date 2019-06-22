@@ -22,9 +22,15 @@ name:'''+name4+'''
 age:'''+age2+'''
 salary:'''+salary2
 print(info)
-#格式化输出--占位符%s
+#格式化输出3--占位符%s
 info='''-------info of %s-----
 name:%s
 age:%s
 salary:%s'''%(name4,name4,age2,salary2)#这里的%s是占位符加上一个输入类型，这里是string型，也可以是%d int型等等
+print(info)
+#格式化输出4--format加索引，但是一定是花括号
+info='''-------info of {0}-----
+name:{0}
+age: {1} #花括号
+salary:{2}'''.format(name4,age2,salary2)#S= string 用D还可以验证是否满足数据类型D= int F=float
 print(info)
