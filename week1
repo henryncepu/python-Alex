@@ -1,1 +1,13 @@
-
+# Author: henry_wang
+print('hello world ')
+name = 'wang'
+name2 = name
+print('my name is ',name,name2)#name 的值放到name2 里，
+name = 'yanjie '
+print(name,name2)#name 的值改了，但是name2里存的值没变
+gf_of_oldboy ='ff'#python 官方指定写法
+GfOfOldboy='hh'#驼峰写法即首字母大写
+name3 = input('please input :')
+age= input('age:')
+salary = input('salary:')
+print(f'Name:{name3}\nage:{age}\nsalary:{salary}')#用f''和\n达到这种输出格式
