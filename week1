@@ -61,7 +61,9 @@ while i <5:
     else :
         i+=1
         print('smaller than real number')
-print(f'the right number is{age_of_oldhenry}')
+else:
+    print('That is enough , you have used up your chance')
+    print(f'the right number is{age_of_oldhenry}')
 
 #把while循环和数值判断分开
 age_of_oldhenry =randint(1,100)#在1,100中找随机数
@@ -79,4 +81,4 @@ while True:
     else :
         i+=1
         print('smaller than real number')
-print(f'the right number is{age_of_oldhenry}')
+#如果是 while true ，则不能通过while/else 来输出else里的内容，因为while True和else无法构成相反关系
