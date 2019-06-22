@@ -34,3 +34,28 @@ name:{0}
 age: {1} #花括号
 salary:{2}'''.format(name4,age2,salary2)#S= string 用D还可以验证是否满足数据类型D= int F=float
 print(info)
+
+#if else loop
+# _username = 'henry'
+# _password='123'
+# username= input('user:')
+# password= input('passw:')
+# if _username == username and _password==password:
+#     print('wel {name}'.format(name=username))
+# else:
+#     print('false')
+age_of_oldhenry =randint(1,100)#在1,100中找随机数
+
+i=0
+while i <5:
+    guess_age = int(input('age:'))
+    if guess_age == age_of_oldhenry:
+        print(f'你用了{i}次找到答案')
+        break
+    elif guess_age > age_of_oldhenry:
+        i+=1
+        print('bigger than real number')
+    else :
+        i+=1
+        print('smaller than real number')
+print(f'the right number is{age_of_oldhenry}')
