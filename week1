@@ -7,7 +7,18 @@ name = 'yanjie '
 print(name,name2)#name 的值改了，但是name2里存的值没变
 gf_of_oldboy ='ff'#python 官方指定写法
 GfOfOldboy='hh'#驼峰写法即首字母大写
+
+#格式化输出1--用f''
 name3 = input('please input :')
 age= input('age:')
 salary = input('salary:')
 print(f'Name:{name3}\nage:{age}\nsalary:{salary}')#用f''和\n达到这种输出格式
+#格式化输出2--用字符串拼接
+name4 = input('name:')
+age2 = input('age:')
+salary2=input('salary:')
+info='''-------info of '''+name4+'''-----
+name:'''+name4+'''
+age:'''+age2+'''
+salary:'''+salary2
+print(info)
