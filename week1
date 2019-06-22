@@ -82,3 +82,23 @@ while True:
         i+=1
         print('smaller than real number')
 #如果是 while true ，则不能通过while/else 来输出else里的内容，因为while True和else无法构成相反关系
+
+#for 循环
+age_of_aim = randint(1,100)
+for i in range(3):
+    guess_aim = int(input('input a number:'))
+
+    if guess_aim==age_of_aim:
+        print('right')
+        break
+    else:
+        if guess_aim>age_of_aim:
+            print('bigger')
+            i+=1
+        elif guess_aim<age_of_aim:
+            print('smaller')
+            i+=1
+else:
+    print('times used up')
+    print(f'the right answeris:{age_of_aim}')
+
