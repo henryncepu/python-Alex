@@ -1,3 +1,7 @@
+#编写登录接口：
+#1输入用户密码
+#2认证成功后显示欢迎
+#3输入三次后锁定
 def homework1():
     user=['henry','brandon','aiden']
     password='123'
