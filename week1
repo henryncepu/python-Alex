@@ -102,3 +102,25 @@ else:
     print('times used up')
     print(f'the right answeris:{age_of_aim}')
 
+
+def another_chance():
+    i = 0
+    aim_num=randint(1,50)
+
+    while i <3:
+        guess_try = int(input('input:'))
+        if aim_num==guess_try:
+            print('True')
+        else:
+            if aim_num>guess_try:
+                print('smaller')
+            else:
+                print('bigger')
+            i+=1
+            if  i==3:
+                confirm_try=input('do u want another chance')
+                if confirm_try !='n':
+                    i = 0
+    else:
+        print(f'u have use{i} times')
+another_chance()
