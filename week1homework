@@ -1,0 +1,30 @@
+def homework1():
+    user=['henry','brandon','aiden']
+    password='123'
+    i = 0
+    while i <3:
+
+        get_user=input('input your username:')
+        get_pass=input('input your password:')
+        if get_user in user :
+            if get_pass == password:
+                print(f'welcome {get_user} back to home')
+                break
+            elif get_pass!=password:
+                print('please check your password')
+                i+=1
+
+        elif get_pass == password:
+            if get_user in user:
+                print(f'welcome {get_user} back to home')
+                break
+            elif get_user not in user :
+                print('this username is not exist')
+                i+=1
+        elif get_user not in user and get_pass != password:
+            print('all your information is not ture')
+            i+=1
+        if i ==3:
+            print('you have used up your chance fuck off')
+            break
+homework1()
