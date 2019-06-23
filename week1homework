@@ -1,7 +1,7 @@
 #编写登录接口：
 #1输入用户密码
 #2认证成功后显示欢迎
-#3输入三次后锁定
+#3输入三次后锁定  要用到读存文件
 def homework1():
     user=['henry','brandon','aiden']
     password='123'
@@ -32,3 +32,28 @@ def homework1():
             print('you have used up your chance fuck off')
             break
 homework1()
+
+
+
+
+def threetime():
+    i=0
+    username =['haha']
+    lock_name=[]
+    password ='123'
+    while i<3:
+        get_user = input('input username')
+        get_password=input('input password')
+        if get_user in lock_name:
+            print('you had been locked')
+            if username== get_user and password ==get_password :
+                print(f'welcome {get_user}')
+            else :
+                if get_user not in username:
+                    print('username is not correct')
+                    i+=1
+                    if i ==3:
+                        lock_name.append(get_user)
+                        print('locked')
+
+threetime()
