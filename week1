@@ -120,7 +120,7 @@ def another_chance():
             if  i==3:
                 confirm_try=input('do u want another chance')
                 if confirm_try !='n':
-                    i = 0
+                    i = 0     #i=0 是给i赋值为0， i==0 是判断i是否为0
     else:
         print(f'u have use{i} times')
 another_chance()
