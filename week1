@@ -17,7 +17,7 @@ print(f'Name:{name3}\nage:{age}\nsalary:{salary}')#用f''和\n达到这种输出
 name4 = input('name:')
 age2 = input('age:')
 salary2=input('salary:')
-info='''-------info of '''+name4+'''-----
+info='''-------info of '''+name4+'''-----#要实现info输出的name,age,salary这些是带格式的话，必须用''''''
 name:'''+name4+'''
 age:'''+age2+'''
 salary:'''+salary2
